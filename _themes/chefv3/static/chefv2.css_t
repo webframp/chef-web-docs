@@ -774,7 +774,6 @@ nav.nav-main {
     .nav-docs .sub-items.level-4 a {
       padding-left: 61px; }
 
-
 .version-picker {
   padding: 5px 17px 10px;
   font-size: 12px; }
@@ -856,6 +855,25 @@ nav.nav-main {
     background: #dcdee0; }
     .dropdown-wrapper .legacy-item:hover {
       background: #c1c5c8; }
+
+.archive-message {
+  padding: 10px 0;
+  background: #f8cac7;
+  color: #c13c2b; }
+
+.archive-message--text {
+  width: 100%;
+  max-width: 1295px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  text-align: center;
+  font-size: 16px; }
+  .archive-message--text > a {
+    color: inherit;
+    text-decoration: underline; }
+    .archive-message--text > a:hover, .archive-message--text > a:focus, .archive-message--text > a:active {
+      color: #972f22; }
 
 .left {
   float: left; }

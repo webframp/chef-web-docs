@@ -1,0 +1,29 @@
+$archive-message-background: #f8cac7;
+$archive-message-text: #c13c2b;
+
+.archive-message {
+  padding: 10px 0;
+  background: $archive-message-background;
+  color: $archive-message-text;
+}
+
+.archive-message--text {
+  width: 100%;
+  max-width: 1295px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: $primary;
+  text-align: center;
+  font-size: 16px;
+
+  & > a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($archive-message-text, 10%);
+    }
+  }
+}

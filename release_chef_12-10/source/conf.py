@@ -40,6 +40,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'Chef 12.10 Documentation'
 copyright = u'This work is licensed under a Creative Commons Attribution 3.0 Unported License.'
+html_context = {'release_info': '05/16/2016 Chef Client 12.10'}
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -124,6 +124,15 @@
 {% set navItems = navItems|default(defaultNavItems) -%}
 <nav class="nav-docs">
   <ul class="nav-docs-items" id="nav-docs-list">
+    <li class="main-item dark-item docs-search">
+      <form action="/search.html" method="get">
+        <input type="text" placeholder="Search" id="docs-search" name="q">
+        <input type="submit" class="submit-button" value="">
+        <i class="fa fa-search icon-search"></i>
+      </form>
+
+
+    </li>
     {% block leftnav %}
     {%- for item in navItems %}
     <li class="main-item has-sub-items">

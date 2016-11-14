@@ -242,15 +242,15 @@ Use ``<some_token>`` for the ``--admin-token`` parameter below.
 .. code-block:: bash
 
    $ delivery-ctl install-runner [options]
-      -f, --fqdn                    FQDN of the remote host that will be configured into a runner
-      -u, --username                SSH username to use for authentication to the remote host
-      -P, --password                SSH password to use for authentication to the remote host
-      -i, --ssh-identity-file       SSH identity file used for authentication to the remote host
-      -p, --port                    SSH port to connect to on the remote host (Default: 22)
-      -I, --installer               The location of the ChefDK package for the build node
-      -a, --admin-user              Workflow admin username
-      -t, --admin-token             Workflow admin token
-      -e, --enterprise              Workflow enterprise to add the runner into. Legacy option, only required if you have more than one enterprise configured
+      -f, --fqdn                        FQDN of the remote host that will be configured into a runner
+      -u, --username                    SSH username to use for authentication to the remote host
+      -P, --password                    SSH password to use for authentication to the remote host
+      -i, --ssh-identity-file           SSH identity file used for authentication to the remote host
+      -p, --port                        SSH port to connect to on the remote host (Default: 22)
+      -I, --installer                   The location of the ChefDK package for the build node. This option may not be used with the --chefdk-version option. If neither are passed the latest ChefDK will be downloaded remotely
+      -v, --chefdk-version              Chefdk version to download and install on the runner. This option may not be used with the --installer option. If neither are passed the latest ChefDK will be downloaded remotely.
+      -e, --enterprise                  Workflow enterprise to add the runner into. Legacy option, only required if you have more than one enterprise configured
+      -o, --[no-]overwrite-registration Overwrite this node's entry in the Chef Server if it's already registered
       -h, --help                    Show the usage message
 
 **Example**
@@ -263,7 +263,7 @@ All parameters are optional on the command line. The installation process will p
 
 .. code-block:: bash
 
-   $ delivery-ctl install-runner -f runner-hostname.mydomain.co -u ubuntu -i ~/.ssh/id_rsa -I ./chefdk.deb -a delivery_admin -t 'vKuYXMy8DfT53y0zcHh9kpawmdz3Gipb52bAmzMCYEY=' -e MyEnterprise
+   $ delivery-ctl install-runner -f runner-hostname.mydomain.co -u ubuntu -i ~/.ssh/id_rsa -I ./chefdk.deb
 
 You only need to supply one of ``--password`` or ``--ssh-identity-file``.
 

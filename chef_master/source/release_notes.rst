@@ -7,6 +7,7 @@ Release Notes: chef-client 12.0 - 12.16
 
 Chef is a powerful automation platform that transforms infrastructure into code. Whether you’re operating in the cloud, on-premises, or in a hybrid environment, Chef automates how infrastructure is configured, deployed, and managed across your network, no matter its size.
 
+.. end_tag
 
 What's New in 12.16
 =====================================================

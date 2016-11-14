@@ -7,12 +7,6 @@ An Overview of Chef
 
 Chef is a powerful automation platform that transforms infrastructure into code. Whether you’re operating in the cloud, on-premises, or in a hybrid environment, Chef automates how infrastructure is configured, deployed, and managed across your network, no matter its size.
 
-This diagram shows how you develop, test, and deploy your Chef code.
-
-.. image:: ../../images/start_chef.svg
-   :width: 700px
-   :align: center
-
 .. end_tag
 
 * The workstation is the location from which all of Chef is managed, including :doc:`installing the Chef DK </install_dk>`, :doc:`authoring cookbooks </cookbooks>`, and using tools like :doc:`Kitchen </kitchen>`, `chef-zero (a command-line tool that runs locally as if it were connected to a real Chef server) <https://docs.chef.io/ctl_chef_client.html#run-in-local-mode>`__, command-line tools like :doc:`Knife (for interacting with the Chef server) </knife>` and :doc:`chef (for interacting with your local chef-repo) </ctl_chef>`, and resources like :doc:`core Chef resources (for building recipes) </resources>` and `InSpec (for building security and compliance checks into your workflow) <http://inspec.io>`__.

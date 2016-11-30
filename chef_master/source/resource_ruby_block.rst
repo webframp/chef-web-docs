@@ -298,8 +298,8 @@ The following example shows how to use variables within a Ruby block to set envi
 
 .. code-block:: ruby
 
-   node.set[:rbenv][:root] = rbenv_root
-   node.set[:ruby_build][:bin_path] = rbenv_binary_path
+   node.default[:rbenv][:root] = rbenv_root
+   node.default[:ruby_build][:bin_path] = rbenv_binary_path
 
    ruby_block 'initialize' do
      block do
